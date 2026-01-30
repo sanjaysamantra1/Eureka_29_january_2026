@@ -1,0 +1,77 @@
+HTML Emmets / shortcuts
+=======================
+https://docs.emmet.io/cheat-sheet/
+
+
+
+few shortcuts:
+--------------
+!     HTML-5 code
+
+ul>li*5{Car-$}   
+
+select>option*20{Country-$}
+
+table>tr*10>td*5{Data-$}
+
+
+
+How to use CSS in HTML Files
+=============================
+1. inline css (style attribute) ( Restricted to 1 Element ) ( not re-usable)
+   <div style="color:blueviolet">Welcome to Flipkart</div>
+   
+2. internal css ( style tag ) ( Restricted to 1 HTML page )
+   <style></style>
+
+3. external css
+   a. write css code in a separate .css file
+   b. include that css file in HTML file using <link>
+
+
+
+
+HTML Elements
+=============
+Block Level : Every block level element starts with a new line
+   <h1>, <h2>,  <p> , <div> , <form> , <table>
+
+inline : inline elements occupies only the required spacae, allow other elements to be shown next to them
+    <span> , <b> , <i> , <img>, <button>
+
+
+
+
+How to use Bootstrap in HTML Files
+==================================
+-Bootstrap is a CSS Library
+-preDefined css classes
+-Maintained by twitter
+-Bootstrap 5 is the latest version
+-Official bootstrap link :https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
+Add CDN Link to the <head></head> of HTML file
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+
+Types of Javascript
+===================
+1. Internal Javascript <script></script>  Page level
+2. External Javascript  ( create Separate .js file & include that js file in HTML)
+
+
+How to write and execute javascript code
+========================================
+1. Browser
+   a. create a javascript file with some javascript code ( addition.js )
+   b. include that javascript file into HTML file
+      <script src="./addition.js"></script>
+   c. open HTML file in browser ( alt+b )
+
+2. NodeJS 
+   a. create a javascript file with some javascript code ( addition.js )
+   b. run the javascript file with the below command (make sure nodejs is installed)
+      node <filename>.js   
+
+Note: Every javascript code that runs on browser might not work in nodejs , and vice-versa
