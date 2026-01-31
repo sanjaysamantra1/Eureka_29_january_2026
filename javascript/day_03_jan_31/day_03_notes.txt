@@ -1,0 +1,45 @@
+How to write and execute javascript code
+========================================
+1. Browser (FrontEnd)
+   a. create a javascript file with some javascript code ( addition.js )
+   b. include that javascript file into HTML file
+      <script src="./addition.js"></script>
+   c. open HTML file in browser ( alt+b )
+
+2. NodeJS (BackEnd)
+   a. create a javascript file with some javascript code ( addition.js )
+   b. run the javascript file with the below command (make sure nodejs is installed)
+      node <filename>.js   
+
+Note: Every javascript code that runs on browser might not work in nodejs , and vice-versa
+
+
+
+Javascript Objects
+==================
+Common For Browser and NodeJS : console , Math , Array, String , Object, JSON
+Browser Specific Objects : window , document, sessionStorage
+NodeJs Specific Objects/Modules : fs , os , url , http
+
+
+
+Most Commonly Used javascript Objects/Classes
+=============================================
+console : log(), warn(), error(), table(), dir(), time(), timeEnd()
+window : alert(), prompt(), confirm(), atob(), btoa()
+document : write(), getElementById(), querySelector()
+Math : max(), min(), sqrt(), cbrt()
+Array : push(), pop(), splice(), map()
+Object : keys(), values(), assign()
+
+
+Window Object Methods
+=====================
+alert :  Display Informational Message
+         Message + Ok
+
+confirm :  User Confirmation
+           Message + (Ok-true , Cancel-false)
+
+prompt :  To Collect User input
+          Message + inputBox + Ok,Cancel
