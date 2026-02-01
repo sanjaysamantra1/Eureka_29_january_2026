@@ -1,0 +1,57 @@
+Datatypes
+=========
+-Type of Data we are dealing with
+
+2 types : primitive , non-primitive
+
+primitives : 
+    number : 4 , 4.5 , -2.3 
+    string : 'sachin' , '15' , 'true' 
+    boolean : true / false
+    undefined : undefined
+    bigint
+    symbol
+non-primitive : Object
+
+
+
+primitives vs non-primitives
+============================
+-primitives are immutable, non-primitives are mutable.
+-primititves are compared by value , non-primitives are compared by referrence/address
+
+
+
+
+undefined vs null
+=================
+-when a variable is declared without any value , javascript assigns 'undefined' value to that variable.
+-null is an intentional value assigned by developers.
+-typeof 'undefined' undefined , typeof null is object.
+
+
+==  vs ===
+== equality
+=== strict equality
+
+== typecasts the value and compares
+=== compares without typecasting
+
+
+
+Javascript : Programming Language , Follows ECMAScript standards
+ECMA : European Computer Menufecturer association
+ECMAScript : Set of standards, followed by javascript
+
+
+ES_5   <= june 2015 
+ES_6   2015 ( const , let , class , extends, module , Map, Set, REST )
+ES_7   2016
+ES_9   2018
+ES_10   2019
+ES_11   2020
+ES_12   2021
+ES_13   2022
+ES_14   2023
+ES_15   2024
+ES_16   2025
