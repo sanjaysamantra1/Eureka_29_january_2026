@@ -9,3 +9,7 @@ Passcode: #?7wM7!0
 day_03_jan_31:
 https://zoom.us/rec/share/BUy41cFrVBYjN-3bULsQMRgElynDByUhB-W_FmIjBnv_s48RY05sEZte_7z5P0oE.jcFx6rafW33kS-NV 
 Passcode: &fL^M+V0
+
+day_04_feb_1:
+https://zoom.us/rec/share/PqDq3mFX0vaYtKGqLZEeDBX72z-FlcY3uOoVEst1hXooWzBAID-hvia4ktsIAnxt.RbQ36NGIIi6-WkcW 
+Passcode: VKT=U4w9
