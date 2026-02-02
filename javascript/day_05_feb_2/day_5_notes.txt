@@ -1,0 +1,8 @@
+How Javascript Works
+====================
+-When a JavaScript program runs, 1 Global Execution Context (GEC) is created.
+-For every function call, a new Function Execution Context (FEC) is created.
+-Execution Context = the environment in which code executes.
+-Each execution context has two phases: 
+	1. creation phase. (Memory is allocated for variables and functions; 'var' variables are initialized with undefined)
+	2. execution phase. (Code is executed line by line; variables receive their assigned values and functions are invoked)
