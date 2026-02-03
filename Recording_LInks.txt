@@ -13,3 +13,11 @@ Passcode: &fL^M+V0
 day_04_feb_1:
 https://zoom.us/rec/share/PqDq3mFX0vaYtKGqLZEeDBX72z-FlcY3uOoVEst1hXooWzBAID-hvia4ktsIAnxt.RbQ36NGIIi6-WkcW 
 Passcode: VKT=U4w9
+
+day_05_feb_2:
+https://zoom.us/rec/share/BdQ_9BOQSDcrH3QtJrTQwYufQgdj94aWoWpZv5scAcd6Pv9gCENAql0VmuyFDDWB.mG1hNh-s9CfRnC0F 
+Passcode: 05B!Mk7B
+
+day_06_feb_3:
+https://zoom.us/rec/share/9MT0-8pzauFBhxHFFHIERkGEiaypznfuTvSrT3snBKR30j1Thf_RWEjV6tikGIZa.B83CClqPyNRFsges 
+Passcode: E&nH6lCP
