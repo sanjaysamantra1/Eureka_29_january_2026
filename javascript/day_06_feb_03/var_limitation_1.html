@@ -1,0 +1,13 @@
+<script>
+    function demo1() {
+        if (true) {
+            var courseName = 'Angular'; // this is not a block scoped variable
+            console.log('Inside Block:', courseName)
+        }
+        console.log('outside Block:', courseName)
+    }
+    demo1()
+
+    // Even though courseName is declared inside a block it's not a block scoped variables
+    // its a function scoped variable, that's why its visible to demo1() 
+</script>

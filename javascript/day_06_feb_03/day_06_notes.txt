@@ -1,0 +1,63 @@
+Variables
+=========
+-Variables are containers for storing data values. 
+ Variable is a name of memory location.
+-Variables in Javascript can be declared by using either one of the below 3 keywords:
+ 1. var   
+ 2. let
+ 3. const
+
+
+	var						let						 const
+======================================================================
+1.since begining		 1.ECMASCRIPT-6(2015)		1.ECMASCRIPT-6(2015)
+2.value can be changed   2.value can be changed     2.cann't be changed
+3.initialization is		 3.initialization is		3.mandatory
+	not mandatory           not mandatory	
+4.can be redeclared		 4.cann't be redeclared		4.cann't be redeclared
+5.function/global		 5.block/function/global	5.block/function/global
+6.TDZ - No			 	 6.TDZ - Yes				6.TDZ - Yes
+
+N:p - All variables (var,let,const) are hoisted but only 'var' variables are usable/reachable before initialization.
+-let/const variables are not reachable/usable before initialization (Temporal Dead Zone)
+
+	
+Hoisting:
+=========
+-hoisting is a mechanism where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed.
+-Variables declared with var are hoisted, but their values are not initialized. They are given an initial value of undefined.
+-Variables declared with let and const are also hoisted but are not initialized. Accessing them before declaration results in a ReferenceError because they are in the "temporal dead zone."
+-Function declarations are hoisted, meaning you can call them before they appear in the code.
+
+Type			   Hoisted?			   Initialized?			  Usable before declaration?
+=========================================================================================
+var					✅ Yes				❌ Undefined			⚠️ Allowed but undefined
+let					✅ Yes				❌ No					❌ ReferenceError
+const				✅ Yes				❌ No					❌ ReferenceError
+Func Declaration	✅ Yes				✅ Yes					✅ Allowed
+Func Expression 	✅ Yes				❌ Undefined			❌ TypeError
+
+
+
+Temporal Dead Zone
+==================
+-The period between entering scope and being initialized where they cannot be accessed. 
+ This period is the temporal dead zone (TDZ).
+-The state where variables are un-reachable. They are in memory, but they aren't usable.
+-The let and const variables exist in the TDZ from the start of their enclosing scope until they are initialized.
+-if a let/const variable is accessed before its initialization, it would throw a ReferenceError. Because of the TDZ.
+
+
+Scopes
+======
+Global : variables declared outside the function, accessed by any of the functions
+Function : variables declared inside a function, accessed by only that function
+Block: variables declared inside a block, accessed by only that block
+
+
+Strict Mode
+==========
+-Javascript code can be executed in 1. Normal 2. strict Mode
+-Normal mode ignores few mistakes
+-strict mode converts those mistakes to errors
+-strict mode can be enabled using 'use strict'

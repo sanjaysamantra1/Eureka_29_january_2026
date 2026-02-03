@@ -1,0 +1,32 @@
+<script>
+    var a = 10;
+    let b = 20;
+    const c = 30;
+    console.log(`Global: ${a} ${b} ${c}`); // Global Scope
+
+    function f1() {
+        var d = 40;
+        e = 50; // global
+        console.log('f1 starts...')
+        console.log(`a: ${a}`)
+        console.log(`b: ${b}`)
+        console.log(`c: ${c}`)
+        console.log(`d: ${d}`)
+        console.log(`e: ${e}`)
+        console.log('f1 ends...')
+    }
+    function f2() {
+        console.log('f2 starts...')
+        console.log(`a: ${a}`)
+        console.log(`b: ${b}`)
+        console.log(`c: ${c}`)
+        // console.log(`d: ${d}`); // d is not defined
+        console.log(`e: ${e}`)
+        console.log('f2 ends...')
+    }
+    f1();
+    f2();
+
+    // Note: when a variable is declared without var/let/const
+    // its always a global variable , no matter where it is declared
+</script>
