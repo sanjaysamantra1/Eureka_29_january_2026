@@ -21,3 +21,7 @@ Passcode: 05B!Mk7B
 day_06_feb_3:
 https://zoom.us/rec/share/9MT0-8pzauFBhxHFFHIERkGEiaypznfuTvSrT3snBKR30j1Thf_RWEjV6tikGIZa.B83CClqPyNRFsges 
 Passcode: E&nH6lCP
+
+day_07_feb_4:
+https://zoom.us/rec/share/1uOpOHtBeibThUERwZhCatFD_NuUiJLauBHx-kDDYPUl0A4nl_XMHO3r8KlLSEJn.Hu8jxEKxI2PwaMkH 
+Passcode: !N35ph#v
