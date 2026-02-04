@@ -1,0 +1,22 @@
+<script>
+    class Employee {
+        firstName = 'virat';
+        lastName = 'kohli';
+
+        fullName1() { // Regular - this : how/where the function is invoked
+            console.log(this, this.firstName, this.lastName); // this = emp obj
+        }
+        fullName2 = () => { // Arrow - this : where the function is written
+            console.log(this, this.firstName, this.lastName); // this = emp obj
+        }
+    }
+    let emp = new Employee();
+    emp.fullName1();
+    emp.fullName2();
+
+    setTimeout(emp.fullName1, 3000); 
+    setTimeout(emp.fullName2, 6000); 
+
+    // when a regular function is called inside settimeout , inside that function this=window
+    // when an arrow function is called inside settimeout , inside that function this=Lexical Scope
+</script>

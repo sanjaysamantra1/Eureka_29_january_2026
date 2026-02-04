@@ -1,0 +1,12 @@
+<script>
+    console.log('Global Code...'); // GEC / anonymous
+    console.log(this); // this = window
+
+    class Student {
+        getName() {
+            console.log(this); // this = Student
+        }
+    }
+    new Student().getName();
+
+</script>

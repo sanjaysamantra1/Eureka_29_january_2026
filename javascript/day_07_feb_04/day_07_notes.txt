@@ -1,0 +1,52 @@
+functions
+=========
+1. pre-defined/built-in functions : console.log(), alert(), prompt()
+2. User Defined Functions
+
+
+Functions can be written:
+    1. Function Declaration / Named Functions
+    2. Function Expression / anonymous function
+    3. Arrow Functions (ES_6)
+
+
+
+Function Declaration  VS  Function Expression
+=============================================
+1. Function Declarations are named , Function Expressions are anonymous
+2. Function Declarations are hoisted, Function Expressions are not hoisted
+
+
+
+HigherOrder Function : a function that takes another function as argument
+CallBack Function : a function that is passed as argument to another function
+
+
+
+Arrow Function 
+==============
+-shorter in syntax
+-don't use function keyword
+-'return' can be skipped
+-function body is optional
+-anonymous
+-are not hoisted
+
+
+this
+====
+-its a keyword
+-'this' refers to a specific object and acts as a reference to the current execution context
+
+
+
+Arrow Function Limitation
+==========================
+1. arrow functions cannot be used as object methods
+   we shouldn't use arrow functions in object literals
+
+
+Arrow Function Benefits
+=======================
+-Arrow functions dont have their own 'this' , they use 'this' from their lexical/outer
+-'this' inside arrow function is static 
