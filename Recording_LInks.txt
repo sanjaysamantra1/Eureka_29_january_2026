@@ -30,3 +30,7 @@ Passcode: !N35ph#v
 day_08_feb_5:
 https://zoom.us/rec/share/WANJdl4JF77C2DB-TsfZQKGRGdGUwGb0fTDC6ucPV_gvSBZZoL-t_VaK6wMiytg9.rYlhvqb-uNp4q15S 
 Passcode: XhWY#a9L
+
+day_09_feb_6:
+https://zoom.us/rec/share/otV-PkHJl5XYoQkaxedecPzdv6ae4_qcFFeEFCvLMjaHLNuq00FG0H3iN8EcBK3e.H0Un7Z8UlEy2qhsQ 
+Passcode: &Ezp==34
