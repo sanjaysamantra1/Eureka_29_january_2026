@@ -25,3 +25,8 @@ Passcode: E&nH6lCP
 day_07_feb_4:
 https://zoom.us/rec/share/1uOpOHtBeibThUERwZhCatFD_NuUiJLauBHx-kDDYPUl0A4nl_XMHO3r8KlLSEJn.Hu8jxEKxI2PwaMkH 
 Passcode: !N35ph#v
+
+
+day_08_feb_5:
+https://zoom.us/rec/share/WANJdl4JF77C2DB-TsfZQKGRGdGUwGb0fTDC6ucPV_gvSBZZoL-t_VaK6wMiytg9.rYlhvqb-uNp4q15S 
+Passcode: XhWY#a9L
