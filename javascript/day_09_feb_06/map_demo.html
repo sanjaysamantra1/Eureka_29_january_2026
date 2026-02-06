@@ -1,0 +1,19 @@
+<script>
+    let arr = [10, 20, 30, 40, 50];
+    let resArr = arr.map((ele) => ele + 5);
+    console.log(resArr);
+
+    const employees = [
+        { id: 1, firstName: "Rahul", lastName: "Sharma", age: 28, sal: 45000 },
+        { id: 2, firstName: "Priya", lastName: "Verma", age: 32, sal: 52000 },
+        { id: 3, firstName: "Amit", lastName: "Kumar", age: 26, sal: 38000 },
+        { id: 4, firstName: "Neha", lastName: "Patel", age: 35, sal: 61000 },
+        { id: 5, firstName: "Suresh", lastName: "Reddy", age: 41, sal: 75000 }
+    ];
+    // write logic to have 'fullName' field in each object
+    employees.map((emp) => {
+        emp.fullName = emp.firstName + " " + emp.lastName;
+        return emp;
+    })
+    console.log(employees)
+</script>

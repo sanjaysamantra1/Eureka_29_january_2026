@@ -1,0 +1,29 @@
+<script>
+    let employees = [
+        { "eId": 101, "name": "sanjay", "sal": 5000, "gender": "male" },
+        { "eId": 104, "name": "geeta", "sal": 8000, "gender": "female" },
+        { "eId": 103, "name": "sameer", "sal": 7000, "gender": "male" },
+        { "eId": 102, "name": "sita", "sal": 9000, "gender": "female" },
+        { "eId": 105, "name": "deepak", "sal": 8000, "gender": "male" }
+    ];
+
+    // display first female employee 
+    let first_female_employee = employees.find((emp) => emp.gender === 'female');
+    console.log('first_female_employee: ', first_female_employee);
+
+    // display the index number for first female employee 
+    let ind_first_female_employee = employees.findIndex((emp) => emp.gender === 'female');
+    console.log('ind_first_female_employee: ', ind_first_female_employee);
+
+    // display last female employee 
+    let last_female_employee = employees.findLast((emp) => emp.gender === 'female');
+    console.log('last_female_employee: ', last_female_employee);
+
+    // display the index number for last female employee 
+    let ind_last_female_employee = employees.findLastIndex((emp) => emp.gender === 'female');
+    console.log('ind_last_female_employee: ', ind_last_female_employee);
+
+    // display all female employees
+    let all_female_employee = employees.filter((emp) => emp.gender === 'female');
+    console.log('all_female_employee: ', all_female_employee);
+</script>
