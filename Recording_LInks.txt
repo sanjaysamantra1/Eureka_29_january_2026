@@ -34,3 +34,8 @@ Passcode: XhWY#a9L
 day_09_feb_6:
 https://zoom.us/rec/share/otV-PkHJl5XYoQkaxedecPzdv6ae4_qcFFeEFCvLMjaHLNuq00FG0H3iN8EcBK3e.H0Un7Z8UlEy2qhsQ 
 Passcode: &Ezp==34
+
+
+day_10_feb_7:
+https://zoom.us/rec/share/_AK83ru3pBi301mJTwQ0Ju0M_Hm1UuCcMf3h3GtmYS2B1zaPbJ3JdghTsTcIsZ3L.ZaxDTeJtrDAUVCj4 
+Passcode: dJ!6Ff!1
