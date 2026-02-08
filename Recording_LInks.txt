@@ -39,3 +39,7 @@ Passcode: &Ezp==34
 day_10_feb_7:
 https://zoom.us/rec/share/_AK83ru3pBi301mJTwQ0Ju0M_Hm1UuCcMf3h3GtmYS2B1zaPbJ3JdghTsTcIsZ3L.ZaxDTeJtrDAUVCj4 
 Passcode: dJ!6Ff!1
+
+day_11_feb_8:
+https://zoom.us/rec/share/ZhW-saVj9azBHt303a3GGjWqNUGwF-07pwgVBitLLAu-MorT31T3okEm0VQyRXEU.jGHIjECPbX7xjFzq 
+Passcode: ?KhcW7$r
