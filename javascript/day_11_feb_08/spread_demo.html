@@ -1,0 +1,18 @@
+<script>
+    // spread/break array of values to individual value
+
+    let arr1 = [10, 20, 30];
+    let arr2 = arr1; // referrence Copy
+    let arrr3 = [...arr1]; // Shallow copy - Spread
+
+    console.log('Maximum: ', Math.max(10, 20, 30));
+    console.log('Maximum: ', Math.max(arr1));
+    console.log('Maximum: ', Math.max(...arr1));  // spread
+
+
+    let arr = [10, 20, 30, 40, 10, 10, 10, 10, 40, 40, 40, 10];
+    let uniqueSet = new Set(arr);
+    console.log(uniqueSet)
+    let uniqueArr = [...uniqueSet];
+    console.log(uniqueArr)
+</script>

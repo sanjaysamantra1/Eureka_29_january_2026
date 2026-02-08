@@ -1,0 +1,14 @@
+<script>
+    function add(a, b, c = 0) { // c=0 default param
+        console.log(a + b + c);
+    }
+    add(10, 20);  // a=10 b=20 c=undefined   NaN
+    add(10, 20, 30);  // a=10 b=20 c=30   60
+
+
+    function greet(msg = 'Welcome', user = 'Guest') {
+        console.log(`${msg} ${user}`)
+    }
+    greet('Good Morning'); // Good Morning Guest
+    greet('Good Morning', 'Sanjay'); // Good Morning Sanjay
+</script>

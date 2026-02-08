@@ -1,0 +1,17 @@
+<script>
+    let obj1 = {
+        firstName: 'Virat',
+        lastName: 'Kohli',
+        fullName: function () {
+            console.log(this.firstName, this.lastName)
+        }
+    }
+
+    let obj2 = {
+        firstName: 'Virat',  // es_6
+        lastName: 'Kohli',
+        fullName() {
+            console.log(this.firstName, this.lastName)
+        }
+    }
+</script>

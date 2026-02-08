@@ -1,0 +1,19 @@
+<script>
+    // Var arg
+    // Write a function that can add any # of values
+    function add(...arr) { // REST Param
+        let sum = 0;
+        for (ele of arr) {
+            sum = sum + ele;
+        }
+        console.log(sum)
+    }
+    add(10, 20, 30)
+    add(10, 20, 30, 40, 50)
+
+    // Rest parameter must be last formal parameter
+    function demo(a, b, ...c) {
+        console.log(a, b, c);
+    }
+    demo(10, 20, 30, 40, 50); 
+</script>
