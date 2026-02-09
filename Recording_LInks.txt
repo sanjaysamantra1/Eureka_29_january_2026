@@ -43,3 +43,7 @@ Passcode: dJ!6Ff!1
 day_11_feb_8:
 https://zoom.us/rec/share/ZhW-saVj9azBHt303a3GGjWqNUGwF-07pwgVBitLLAu-MorT31T3okEm0VQyRXEU.jGHIjECPbX7xjFzq 
 Passcode: ?KhcW7$r
+
+day_12_feb_9:
+https://zoom.us/rec/share/bZmjuTkgYBfwDRASEuz2aftlgZiSaGRQnz30fCsIX8W3Mwfo5Wfb-ZmO9peSI3gT.rur218Bmd2tPLh6g 
+Passcode: nk$MF98#
