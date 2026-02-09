@@ -1,0 +1,60 @@
+1. convert array of letters to array of words
+		const inputArr = [ 
+				'b', 'a', 'k', 'e', '',
+				'c', 'a', 'k', 'e', '',
+				'e', 'a', 't'
+				];
+	   output = ['bake','cake','eat'];
+
+2. Get all expired medicines (compare with today)
+const medicines = [
+  { id: 1, name: "Paracetamol", category: "Pain Relief", price: 30, expiry: "2026-01-01" },
+  { id: 2, name: "Amoxicillin", category: "Antibiotic", price: 120, expiry: "2025-12-01" },
+  { id: 3, name: "Cetirizine", category: "Allergy", price: 50, expiry: "2024-05-01" },
+  { id: 4, name: "Ibuprofen", category: "Pain Relief", price: 90, expiry: "2026-03-01" },
+  { id: 5, name: "Cough Syrup", category: "Cold", price: 75, expiry: "2025-08-01" },
+];
+
+3. Get total earnings per doctor
+const appointments = [
+  { id: 1, doctor: "Dr. A", patient: "John", date: "2025-08-01", fee: 500 },
+  { id: 2, doctor: "Dr. B", patient: "Alice", date: "2025-08-03", fee: 700 },
+  { id: 3, doctor: "Dr. A", patient: "Mark", date: "2025-07-20", fee: 500 },
+  { id: 4, doctor: "Dr. C", patient: "John", date: "2025-08-05", fee: 600 }
+];
+Output: { "Dr. A": 1000, "Dr. B": 700, "Dr. C": 600 }
+
+4. Calculate total order value for each order( orderId: 1) , Find customer with highest lifetime spend(A)
+const orders = [
+  { orderId: 1, customer: "A", items: [{ price: 100, qty: 2 }, { price: 50, qty: 1 }] },
+  { orderId: 2, customer: "B", items: [{ price: 200, qty: 1 }] },
+  { orderId: 3, customer: "A", items: [{ price: 150, qty: 3 }] }
+];
+
+5. Find Average mark per student, find the topper student based on average mark
+Get all students who scored avg> 85
+const students = [
+  { name: "A", marks: [80, 90, 70] },
+  { name: "B", marks: [60, 75, 85] },
+  { name: "C", marks: [95, 92, 88] }
+];
+
+6. Group products by price range: Low (≤ 5000), Medium (> 5000 and ≤ 20000), High (> 20000)
+const products2 = [
+  { id: 1, name: "Laptop", price: 50000, quantity: 2 },
+  { id: 2, name: "Mobile", price: 20000, quantity: 5 },
+  { id: 3, name: "Headphones", price: 2000, quantity: 10 },
+  { id: 4, name: "Keyboard", price: 1500, quantity: 4 },
+  { id: 5, name: "Monitor", price: 12000, quantity: 3 }
+];
+Output: { low: [...], medium: [...], high: [...] }
+
+7. Total value(price*quantity) of medicines per category
+const medicines = [
+  { id: 1, name: "Paracetamol", price: 20, quantity: 10, category: "Pain Relief" },
+  { id: 2, name: "Amoxicillin", price: 50, quantity: 5, category: "Antibiotic" },
+  { id: 3, name: "Cetirizine", price: 15, quantity: 20, category: "Allergy" },
+  { id: 4, name: "Ibuprofen", price: 30, quantity: 7, category: "Pain Relief" },
+  { id: 5, name: "Azithromycin", price: 100, quantity: 3, category: "Antibiotic" }
+];
+Output: { "Pain Relief": 410, "Antibiotic": 650, "Allergy": 300 }
