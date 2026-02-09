@@ -1,0 +1,24 @@
+<script>
+    console.log(Math.pow(2, 5)); // es_5
+    console.log(2 ** 5); // es_6
+
+
+    // nullish coalescing operator
+    function test(a, b, c, d) {
+        b = b || 20; // false is a falsy value ( 0 , undefined, null , false , '')
+        c = c ?? 30; // undefined/null
+        d = d ?? 40; // undefined/null
+        console.log(`a:${a}  b:${b}  c:${c}  d:${d}`)
+    }
+    test(10, false, false, null);
+
+
+    // ?. Optional Chaining
+    let laptop = { model: 'HP probook', price: 40000 };
+    console.log(laptop.model, laptop.price, laptop.color);
+
+    let user = { firstName: 'Virat', lastName: 'Kohli' }
+    console.log(user.firstName, user?.address?.city);
+
+    console.log('Some code after error')
+</script>

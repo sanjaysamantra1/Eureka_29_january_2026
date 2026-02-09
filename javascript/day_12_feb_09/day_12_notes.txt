@@ -1,0 +1,78 @@
+ES_6
+=====
+10. Class & extends
+11. Module (CommonJS , ECMAScript)
+12. Set 
+13. Map
+14. async-await
+15. Operators ( ** , ?? , ?.)
+
+
+OOP
+----
+class - structure/blueprint/template for creating Object 
+		class has only logical existance
+		class doesn't have physical existance
+		
+object - Real Entity
+		 every instance of a class
+		 Object has physical existance
+
+-a class in javascript is created using constructor function(ES-5).
+-a class in javascript is created using class keyword.(ES-6).
+-class contains variables(states/properties) and methods(behaviours) inside it.
+
+
+
+Set
+===
+-A Set is a Javascript Object that stores unique values.
+-Set can be iterated using loop,forEach()
+-Set Properties:
+	No Duplicate Values
+	Maintains Insertion Order
+	Can store any data type
+	No indexing
+-When To Use Set:
+	Remove Duplicates easily
+	Fast lookups (O(1))
+
+
+// create a set object
+const planets = new Set();
+
+// add items to set object
+planets.add('Mercury');
+planets.add('Earth');
+planets.add('Venus')
+planets.add('Earth').add('Mars'); // Chainable Method
+
+// To Print the complete set
+console.log(planets); // { 'Mercury', 'Earth', 'Venus', 'Mars' }
+
+// check the size of a set
+console.log('Set Size:', planets.size);  // 4
+
+// check an item exists in a set or not
+console.log(planets.has('Earth')); // true
+
+// Delete an item from a set
+planets.delete('Earth'); // deletes 1 item
+
+// After delete
+console.log(planets); // { 'Mercury', 'Venus', 'Mars' }
+
+// Delete All the items 
+planets.clear();
+
+console.log(planets); // {}
+
+
+
+object vs map
+-------------
+1. object keys must be strings, where as map keys can be of any type.
+2. we can get the size of a Map easily.  ex: map.size
+   for object size has to be calculated manually. ex: Object.keys(obj).length
+3.The iteration of maps is in insertion order of the elements
+4.Objects are not inherently iterable (Object.keys() is slow), Maps are iterable.
