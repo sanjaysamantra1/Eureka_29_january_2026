@@ -1,0 +1,25 @@
+<script>
+    //  Calculate total order value for each order(orderId: 1),
+    //  Find customer with highest lifetime spend(A)
+    const orders = [
+        { orderId: 1, customer: "A", items: [{ price: 100, qty: 2 }, { price: 50, qty: 1 }] },
+        { orderId: 2, customer: "B", items: [{ price: 200, qty: 1 }] },
+        { orderId: 3, customer: "A", items: [{ price: 150, qty: 3 }] }
+    ];
+
+    let res = orders.reduce((acc, order) => {
+        const orderTotal = order.items.reduce((sum, item) => {
+            sum = sum + item.price * item.qty;
+            return sum
+        }, 0);
+        console.log(`OrderId ${order.orderId} has total order value ${orderTotal}`)
+
+        if (acc[order.customer]) {
+            acc[order.customer] = acc[order.customer] + orderTotal;
+        } else {
+            acc[order.customer] = orderTotal;
+        }
+        return acc;
+    }, {})
+    console.log(res)
+</script>

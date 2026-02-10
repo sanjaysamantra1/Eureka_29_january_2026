@@ -1,0 +1,7 @@
+Promise
+=======
+-A promise is an object that holds the future value of an asynchronous operation.
+-A Promise object represents a value that is not available now, but will be resolved/available at some point in the future.
+-Promise object can have different states:- pending, resolved/fulfilled, rejected.
+ex:-if we request some data from a server, promise promises us to get that data 
+ that we can use in the future. 

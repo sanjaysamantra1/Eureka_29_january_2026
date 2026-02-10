@@ -1,0 +1,32 @@
+<script>
+    // Find Average mark per student, 
+    // find the topper student based on average mark
+    // Get all students who scored avg> 85
+    const students = [
+        { name: "A", marks: [80, 90, 70] },
+        { name: "B", marks: [60, 75, 85] },
+        { name: "C", marks: [95, 92, 88] }
+    ];
+
+    let result = students.reduce((acc, student) => {
+        const totalmark = student.marks.reduce((sum, mark) => sum + mark);
+        const avgMark = totalmark / student.marks.length;
+        const studentwithAverage = { ...student, average: avgMark };
+
+        // topper
+        if (avgMark > acc.topper.average) {
+            acc.topper = studentwithAverage;
+        }
+
+        // student above 85
+        if (avgMark >= 80) {
+            acc.above85.push(studentwithAverage)
+        }
+        return acc;
+
+    }, {
+        topper: { name: '', average: 0 },
+        above85: []
+    })
+    console.log(result)
+</script>
