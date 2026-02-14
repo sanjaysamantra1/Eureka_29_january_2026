@@ -1,0 +1,52 @@
+<h3 class="text-center">Let's Learn Data Binding</h3>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <div>UserName: {{userName}}</div>
+  <div>UserName: <span [innerText]="userName"></span></div>
+
+  <div class="my-2">
+    <img src="{{img_url}}" alt="" width="200" height="250">
+    <img [src]="img_url" alt="" width="200" height="250" class="mx-2">
+    <img bind-src="img_url" alt="" width="200" height="250">
+  </div>
+
+  <div class="my-2">
+    <div>1 Way: <input value="{{userName}}"></div>
+    <div>1 Way: <input [value]="userName"></div>
+    <div>1 Way: <input bind-value="userName"></div>
+    <div>2 Way: <input [(ngModel)]="userName"></div>
+    <div><input type="search" placeholder="Type Something..." (input)="performSearch($event)"></div>
+  </div>
+
+  <div>
+    <button class="btn btn-success" (click)="flag=!flag">Toggle Flag</button>
+
+    <button class="btn btn-primary mx-2" disabled="{{flag}}">Click Me</button>
+    <button class="btn btn-primary mx-2" [disabled]="flag">Click Me</button>
+    <button class="btn btn-primary mx-2" bind-disabled="flag">Click Me</button>
+
+    <button class="btn btn-success mx-2" (click)="addToCart()">Add To Cart</button>
+    <button class="btn btn-success mx-2" on-click="addToCart()">Add To Cart</button>
+  </div>
+</div>
+
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h4>Assignment-1</h4>
+  <div>Have a paragraph and a toggle button; on clicking the button, control the visibility (Show / Hide) of the
+    paragraph.</div>
+
+  <h1 [hidden]="!flag">Helloooo, I am a paragraph</h1>
+  <button (click)="flag=!flag">{{ flag ? 'Hide' : 'Show'}}</button>
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h4>Assignment-2</h4>
+  <div>Create a textarea with maxLength = 100; as the user keeps typing, count and display how many words and how many
+    characters are typed and remaining characters.</div>
+  <textarea maxlength="100" [(ngModel)]="message"></textarea>
+  <div>Entered Msg: {{message}}</div>
+  <div>Words Count: {{!message ? 0 : message.split(' ').length}}</div>
+  <div>Characters Count: {{message.length}}</div>
+  <div>Remaining Chars: {{100 - message.length}}</div>
+</div>

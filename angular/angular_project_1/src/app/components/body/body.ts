@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import { DataBinding } from "../data-binding/data-binding";
 
 @Component({
   selector: 'app-body',
-  imports: [],
+  imports: [
+    DataBinding
+  ],
   templateUrl: './body.html',
   styleUrl: './body.css',
 })
