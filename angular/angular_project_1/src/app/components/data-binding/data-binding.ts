@@ -15,11 +15,23 @@ export class DataBinding {
   img_url: string = 'https://cdn1.wionews.com/dev/wion/images/2025/20250505/virat-kohli-ct-3-201445.png';
   flag: boolean = true;
   message: string = '';
+  selectedState: string = '';
+  count: number = 0;
+  tempCelsius = 100;
+  myFontSize = 12;
+
+  num1: number = 10;
+  num2: number = 20;
 
   addToCart() {
     alert('Your Item is Added To the cart!!!')
   }
   performSearch(event: any) {
     console.log(event.target.value)
+  }
+
+  addResult: number = 0;
+  addition(a: string, b: string) {
+    this.addResult = Number(a) + Number(b);
   }
 }

@@ -50,3 +50,82 @@
   <div>Characters Count: {{message.length}}</div>
   <div>Remaining Chars: {{100 - message.length}}</div>
 </div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h4>Assignment-3</h4>
+  <div>
+    Create a dropdown with state names; when the user changes the dropdown value, print the selected value in a div.
+  </div>
+  <select [(ngModel)]="selectedState">
+    <option value="KA">Karnataka</option>
+    <option value="TN">Tamilnadu</option>
+    <option value="AP">Andhra Pradesh</option>
+    <option value="OD">Odisha</option>
+    <option value="BH">Bihar</option>
+  </select>
+  <h3>Selected state: {{selectedState}}</h3>
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h4>Assignment-4</h4>
+  <div>
+    create a input box, toggle the type of that input box to (text/password).
+  </div>
+  <div>
+    <input [type]="flag ? 'password' : 'text'">
+    <button (click)="flag=!flag" class="mx-2">Toggle Flag</button>
+  </div>
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h4>Assignment-5</h4>
+  <div>
+    Create a counter example with three controls: Increment, Decrement, and Reset
+  </div>
+  <div>
+    <h3>{{count}}</h3>
+    <button class="btn btn-secondary" (click)="count=count-1">Decrement</button>
+    <button class="btn btn-danger mx-2" (click)="count=0">Reset</button>
+    <button class="btn btn-primary" (click)="count=count+1">Increment</button>
+  </div>
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h4>Assignment-6</h4>
+  <div>
+    Create a temperature converter to convert Celsius to Fahrenheit
+  </div>
+  <div>
+    <input type="number" [(ngModel)]="tempCelsius">
+    <div>Temperature in Celcius: {{tempCelsius}}</div>
+    <div>Temperature in fahrenheit: {{tempCelsius*1.8+32}}</div>
+  </div>
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h4>Assignment-8</h4>
+  <div>
+    Create a button that increases font size and another button that decreases font size for a paragraph
+  </div>
+  <div [style.fontSize.px]="myFontSize">Hello, Good Morning, How are you doing?</div>
+  <div>myFontSize: {{myFontSize}}</div>
+  <button class="btn btn-primary mx-1" (click)="myFontSize=myFontSize+2">Increase Font Size</button>
+  <button class="btn btn-primary mx-1" (click)="myFontSize=myFontSize-2">Decrease Font Size</button>
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h3>Add 2 numbers using 2-way binding</h3>
+  <input type="number" [(ngModel)]="num1" />
+  <input type="number" [(ngModel)]="num2" class="mx-2" />
+  <div>Addition of {{num1}} and {{num2}} is {{num1+num2}}</div>
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h3>Add 2 numbers using template reference variable</h3>
+  <input type="number" #myNum1 />
+  <input type="number" #myNum2 class="mx-2" />
+  <button (click)="addition(myNum1.value, myNum2.value)">Addition</button>
+  <div>
+    Addition result:{{addResult}}
+  </div>
+</div>
