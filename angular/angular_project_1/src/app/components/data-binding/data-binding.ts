@@ -31,7 +31,7 @@ export class DataBinding {
   }
 
   addResult: number = 0;
-  addition(a: string, b: string) {
-    this.addResult = Number(a) + Number(b);
+  addition(a: any, b: any) {
+    this.addResult = +a + +b;
   }
 }
