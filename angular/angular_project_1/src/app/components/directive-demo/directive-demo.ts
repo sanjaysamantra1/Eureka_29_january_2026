@@ -22,4 +22,19 @@ export class DirectiveDemo {
     { "eId": 102, "name": "sita", "sal": 9000, "gender": "female" },
     { "eId": 105, "name": "deepak", "sal": 8000, "gender": "male" }
   ];
+
+  myStyle1 = {
+    "color": "red",
+    "font-size": "28px",
+    "border": "5px dotted green"
+  }
+  myStyle2 = {
+    "color": "orange",
+    "font-size": "28px",
+    "border": "5px dotted blue"
+  }
+
+  myFunction() {
+    return this.num % 2 == 0 ? this.myStyle1 : this.myStyle2;
+  }
 }

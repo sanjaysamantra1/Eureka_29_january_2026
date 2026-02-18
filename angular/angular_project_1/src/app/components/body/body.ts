@@ -7,8 +7,8 @@ import { ProductList } from '../product-list/product-list';
   selector: 'app-body',
   imports: [
     // DataBinding,
-    // DirectiveDemo
-    ProductList
+    DirectiveDemo
+    // ProductList
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',

@@ -68,18 +68,34 @@
     </thead>
     <tbody>
       @for (emp of employees; track $index) {
-        <tr>
-          <td>{{$index + 1}}</td>
-          <td>{{emp.eId}}</td>
-          <td>{{emp.name}}</td>
-          <td>{{emp.gender}}</td>
-          <td>{{emp.sal}}</td>
-          <td>{{$first}}</td>
-          <td>{{$last}}</td>
-          <td>{{$even}}</td>
-          <td>{{$odd}}</td>
-        </tr>
+      <tr>
+        <td>{{$index + 1}}</td>
+        <td>{{emp.eId}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.gender}}</td>
+        <td>{{emp.sal}}</td>
+        <td>{{$first}}</td>
+        <td>{{$last}}</td>
+        <td>{{$even}}</td>
+        <td>{{$odd}}</td>
+      </tr>
       }
     </tbody>
   </table>
+</div>
+
+<div class="border border-2 rounded-2 p-2 m-2">
+  <div>ngStyle is used to apply some style conditionally:</div>
+  <input type="number" [(ngModel)]="num">
+  <p [style.color]="num % 2 == 0 ? 'blue' : 'red'"> Add a style </p>
+  <p [style.fontSize.px]='num % 2 == 0 ? 24 : 36'> Add style with unit </p>
+  <p [style.background-color]=" num % 2 == 0?'green':'blue' "> Add style conditionally </p>
+  <p [ngStyle]="num % 2 == 0 ? myStyle1 : myStyle2"> NgStyle for multiple values </p>
+  <p [ngStyle]="myFunction()"> NgStyle for multiple values </p>
+</div>
+
+<div class="border border-2 rounded-2 p-2 m-2">
+  <div>ngClass is used to apply some css class conditionally:</div>
+  <input type="number" [(ngModel)]="num">
+  <button [ngClass]="['btn','mx-2', num % 2 == 0 ? 'btn-success' : 'btn-danger']">Click Me</button>
 </div>
