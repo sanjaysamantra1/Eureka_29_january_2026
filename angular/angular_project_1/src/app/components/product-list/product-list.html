@@ -1,5 +1,8 @@
 <h3 class="text-center">Product List</h3>
 
+<button class="btn btn-primary" (click)="openAlert()">Sweet Alert</button>
+<button class="btn btn-primary mx-2" (click)="openSnackbar()">snack bar</button>
+
 <div class="container">
   <div class="row">
     <div class="col-sm-2">
@@ -10,7 +13,8 @@
       </select>
     </div>
     <div class="col-sm-6">
-      <input class="form-control" type="search" placeholder="Search..." />
+      <input class="form-control" appTextonly appDisablepaste type="search" placeholder="Search..." />
+      <!-- input is the host element for appTextonly directive -->
     </div>
     <div class="col-sm-4">
       <button class="btn btn-primary">Sort Asc</button>
@@ -22,7 +26,7 @@
     <div class="col-sm-3">
       <div class="card">
         <img src="{{product.image}}" class="card-img-top" alt="..." height="200">
-        <div class="card-body text-center">
+        <div class="card-body text-center" appZoomin>
           <h5 class="card-title">{{product.category}}</h5>
           <p class="card-text">{{product.id}}</p>
           <p class="card-text text-truncate">{{product.title}}</p>
