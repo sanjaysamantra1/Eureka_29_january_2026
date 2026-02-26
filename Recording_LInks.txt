@@ -91,3 +91,8 @@ Passcode: a0=Fmc@B
 day_23_feb_25:
 https://zoom.us/rec/share/lxFOaefJfxaDB0_g_3UDtWTLuaTgziCJG7_3_DdiZ1cVQupv3fL7lYQxgXVwWUlZ.eBa2oaPD2Z39zaTa 
 Passcode: t34*$J4d
+
+
+day_24_feb_26:
+https://zoom.us/rec/share/PJHOg0zwc31WTKUpp_LPul3vy9f0LK6W27xSP1umgYRVA7de_pxZWSdOlDyNChU0.kVqByWK7QUW1lIyc 
+Passcode: RY=+czY6
