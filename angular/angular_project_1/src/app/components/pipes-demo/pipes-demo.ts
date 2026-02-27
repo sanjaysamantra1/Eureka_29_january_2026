@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RemainingPipe } from '../../custom-pipes/remaining-pipe';
 import { OrdinalPipe } from '../../custom-pipes/ordinal-pipe';
+import { MysortPipe } from '../../custom-pipes/mysort-pipe';
 
 @Component({
   selector: 'app-pipes-demo',
@@ -10,7 +11,8 @@ import { OrdinalPipe } from '../../custom-pipes/ordinal-pipe';
     CommonModule,
     FormsModule,
     RemainingPipe,
-    OrdinalPipe
+    OrdinalPipe,
+    MysortPipe
   ],
   templateUrl: './pipes-demo.html',
   styleUrl: './pipes-demo.css',
@@ -22,5 +24,7 @@ export class PipesDemo {
   user = { name: 'Sanjay', age: 50, add: 'bangalore', role: 'trainer' };
   cars = ['Tata', 'Honda', 'Maruti', 'Hyundai', 'Mahindra'];
   msg: string = 'Hello';
-  num : number = 21;
+  num: number = 21;
+
+  arr:any = [20, 50, 10, 40, 30];
 }
