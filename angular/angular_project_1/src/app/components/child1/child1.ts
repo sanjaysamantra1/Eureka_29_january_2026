@@ -5,11 +5,12 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './child1.html',
   styleUrl: './child1.css',
-  inputs:['a','userName']
+  inputs:['a','userName','user']
 })
 export class Child1 {
   a: any;
   userName: any;
+  user:any;
 
   constructor() {
     console.log("Child-1 constructor")
@@ -20,9 +21,10 @@ export class Child1 {
   ngOnInit() {
     console.log('Child-1 ngOnInit');
   }
-  // ngDoCheck() {
-  //   console.log('Child-1 ngDoCheck');
-  // }
+  ngDoCheck() {
+    console.log('Child-1 ngDoCheck');
+    console.log(this.user)
+  }
   // ngAfterContentInit() {
   //   console.log('Child-1 ngAfterContentInit');
   // }

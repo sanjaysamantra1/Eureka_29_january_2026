@@ -1,11 +1,22 @@
 <div class="row border border-2 text-center p-2">
   <div>This is Parent Component</div>
-  <div>My own data a: {{a}} <input type="number" [(ngModel)]="a"></div>
+  <div>My own data a: {{a}} <input type="number" [(ngModel)]="a" #myInputBox></div>
   <div>child2 data: {{child2.userName}}</div>
   <div>child2 UserRole: {{parentUserRole}}</div>
+  <div>Name: {{user.name}}</div>
+  <div>Skills: {{user.skills}}</div>
+  <button class="btn btn-primary" (click)="user.skills.push('SQL')">Add Skill</button>
+
+  @if(flag){
+    <app-demo1></app-demo1>
+  }@else {
+    <app-demo2></app-demo2>
+  }
+
+  <button class="btn btn-success" (click)="flag=!flag">Toggle flag</button>
 
   <div class="col-sm-6 border border-2 p-2">
-    <app-child1 [a]="a" [userName]="child2.userName"></app-child1>
+    <app-child1 [a]="a" [userName]="child2.userName" [user]="user"></app-child1>
   </div>
   <div class="col-sm-6 border border-2 p-2">
     <app-child2 [a]="a" #child2 (eventEmitterObj)="receiveData($event)"></app-child2>
