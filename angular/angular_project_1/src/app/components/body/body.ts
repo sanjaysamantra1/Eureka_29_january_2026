@@ -4,6 +4,7 @@ import { DataBinding } from "../data-binding/data-binding";
 import { DirectiveDemo } from '../directive-demo/directive-demo';
 import { ProductList } from '../product-list/product-list';
 import { Parent } from '../parent/parent';
+import { UserList } from '../user-list/user-list';
 
 @Component({
   selector: 'app-body',
@@ -12,7 +13,8 @@ import { Parent } from '../parent/parent';
     // DirectiveDemo
     // ProductList
     // PipesDemo
-    Parent
+    // Parent
+    UserList
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
