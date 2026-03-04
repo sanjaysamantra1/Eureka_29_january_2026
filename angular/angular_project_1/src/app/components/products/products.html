@@ -1,0 +1,33 @@
+<h3 class="text-center">Product List</h3>
+
+<button class="btn btn-primary" (click)="fetchProducts()">Fetch Products</button>
+
+@if(isLoading()){
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+}@else {
+  <div class="container">
+    <div class="row">
+      @for (product of productArr(); track $index) {
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="{{product.image}}" class="card-img-top" alt="..." height="200">
+          <div class="card-body text-center" appZoomin>
+            <h5 class="card-title">{{product.category}}</h5>
+            <p class="card-text">{{product.id}}</p>
+            <p class="card-text text-truncate">{{product.title}}</p>
+            <p class="card-text text-truncate">{{product.description}}</p>
+            <p class="card-text">{{product.price}}</p>
+            <p class="card-text">
+              {{product.rating.rate}}
+            </p>
+          </div>
+        </div>
+      </div>
+      }@empty {
+      <div>No Products Found</div>
+      }
+    </div>
+  </div>
+}
