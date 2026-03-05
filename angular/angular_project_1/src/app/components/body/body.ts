@@ -8,6 +8,7 @@ import { UserList } from '../user-list/user-list';
 import { Products } from '../products/products';
 import { CommentList } from '../comment-list/comment-list';
 import { EmployeeList } from '../employee-list/employee-list';
+import { ObservableDemo1 } from '../observable-demo1/observable-demo1';
 
 @Component({
   selector: 'app-body',
@@ -20,7 +21,8 @@ import { EmployeeList } from '../employee-list/employee-list';
     // UserList
     // Products
     // CommentList
-    EmployeeList
+    // EmployeeList
+    ObservableDemo1
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',

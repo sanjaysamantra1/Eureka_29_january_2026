@@ -7,7 +7,7 @@ import { Comment } from '../models/comment';
   providedIn: 'root',
 })
 export class CommentService {
-  api_url = 'https://jsonplaceholder.typicode.com/comments';
+  api_url = 'ttps://jsonplaceholder.typicode.com/comments';
   httpClient = inject(HttpClient);
 
   getAllComments(): Observable<Comment[]> {
