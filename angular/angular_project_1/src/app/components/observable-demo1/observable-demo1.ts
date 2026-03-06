@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
-import { filter, forkJoin, from, interval, map, mergeMap, Observable, of } from 'rxjs';
+import { concatMap, filter, forkJoin, from, interval, map, mergeMap, Observable, of } from 'rxjs';
 
 @Component({
   selector: 'app-observable-demo1',
@@ -59,7 +59,7 @@ export class ObservableDemo1 {
   concatMap_demo() {
     let userPublisher = of(1, 2, 3, 4, 5); // outer observable
 
-    userPublisher.pipe(mergeMap(userId => {
+    userPublisher.pipe(concatMap(userId => {
       return this.httpClient.get(`https://fakestoreapi.com/carts/${userId}`); // nested observable
     })).subscribe(cartResponse => {
       console.log(cartResponse)

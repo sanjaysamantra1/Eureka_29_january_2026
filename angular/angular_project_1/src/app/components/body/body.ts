@@ -9,6 +9,7 @@ import { Products } from '../products/products';
 import { CommentList } from '../comment-list/comment-list';
 import { EmployeeList } from '../employee-list/employee-list';
 import { ObservableDemo1 } from '../observable-demo1/observable-demo1';
+import { ObservableDemo2 } from '../observable-demo2/observable-demo2';
 
 @Component({
   selector: 'app-body',
@@ -22,7 +23,8 @@ import { ObservableDemo1 } from '../observable-demo1/observable-demo1';
     // Products
     // CommentList
     // EmployeeList
-    ObservableDemo1
+    // ObservableDemo1
+    ObservableDemo2
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
