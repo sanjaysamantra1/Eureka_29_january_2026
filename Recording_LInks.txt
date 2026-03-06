@@ -124,3 +124,7 @@ Passcode: Z06nacy*
 day_31_mar_5:
 https://zoom.us/rec/share/stzUYEFTJ-uZOhox2-nISWAE0zSC-iCrtMxew6wMJqHXXX64a9oWiFkCslF4ImzN.8d7-UUaSlHvcGa0Q 
 Passcode: 5tE&BB2@
+
+day_32_mar_6:
+https://zoom.us/rec/share/lXIn60XM5uJFMorM20LFYugAPq_e00PweGsCb-KJSUUSEWy2d389_dtLei-3Pxdn.ugow8_Rby8yRtEzd 
+Passcode: A4UCyb.?
