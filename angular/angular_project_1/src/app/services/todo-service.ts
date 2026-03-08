@@ -18,7 +18,7 @@ export class TodoService {
 
   private todoArr: Todo[] = this.todoSubject.value;
   private nextId = 4;
-  
+
   addNewTodo(item: any) {
     item.id = this.nextId++;
     this.todoArr.push(item);
@@ -29,7 +29,7 @@ export class TodoService {
       if (todo.id === id) {
         this.todoArr.splice(ind, 1);
       }
-      this.todoSubject.next([...this.todoArr]);
     });
+    this.todoSubject.next([...this.todoArr]);
   }
 }

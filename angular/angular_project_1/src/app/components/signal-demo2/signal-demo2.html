@@ -1,0 +1,20 @@
+<h3 class="text-center">Let's Learn Effects</h3>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <div>Effect is a function, Whenever any of the signal values change, the effect runs again</div>
+</div>
+
+<div class="col-sm-4 offset-4">
+  <div class="card">
+    <div class="card-body text-center">
+      <h5 class="card-title">{{userData().id}}</h5>
+      <h5 class="card-title">{{userData().username}}</h5>
+      <p class="card-text">{{userData().email}}</p>
+      <p class="card-text">{{userData().phone}}</p>
+      <p class="card-text">{{userData().address.city}}</p>
+      <p class="card-text">{{userData().website}}</p>
+      <button class="btn btn-primary" (click)="incrementUserId()">Increment</button>
+      <button class="btn btn-danger mx-2" (click)="destroyEffect()">Destroy Effect</button>
+    </div>
+  </div>
+</div>

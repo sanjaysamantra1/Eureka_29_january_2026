@@ -1,0 +1,27 @@
+<h3 class="text-center">Let's Learn Signal</h3>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h2>Cookie recipe</h2>
+  <label>
+    # of cookies:
+    <input type="range" min="10" max="100" step="10" [value]="cookieCount()" (input)="updateCookieCount($event)" />
+    {{ cookieCount() }}
+  </label>
+  <p>Butter: {{ butter() }} cup(s)</p>
+  <p>Sugar: {{ sugar() }} cup(s)</p>
+  <p>Flour: {{ flour() }} cup(s)</p>
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h4>Num value is {{num()}}</h4>
+  <h4>Square value is {{numSquare()}}</h4>
+  <button (click)="decrement()">Decrement</button>
+  <button (click)="reset()" class="m-1">Reset</button>
+  <button (click)="increment()">Increment</button>
+  <hr />
+  @for(msg of messages();track $index){
+  <div>{{msg}}</div>
+  }@empty {
+  <div>No Messages to Show</div>
+  }
+</div>
