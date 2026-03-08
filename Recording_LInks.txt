@@ -128,3 +128,7 @@ Passcode: 5tE&BB2@
 day_32_mar_6:
 https://zoom.us/rec/share/lXIn60XM5uJFMorM20LFYugAPq_e00PweGsCb-KJSUUSEWy2d389_dtLei-3Pxdn.ugow8_Rby8yRtEzd 
 Passcode: A4UCyb.?
+
+day_33_mar_7:
+https://zoom.us/rec/share/YnfdSjz1AnhqKQyk0JNnGerzH7ZSqW1914wSFGuh5UhsWuagCUQTqal4cLvVmOMj.tuwryaqBWXW5FxTB 
+Passcode: !PQU6lp4
