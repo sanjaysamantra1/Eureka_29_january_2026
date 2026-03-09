@@ -136,3 +136,7 @@ Passcode: !PQU6lp4
 day_34_mar_8:
 https://zoom.us/rec/share/g8PlUxVIv29re4A-0nTPTPSU991K444dr_j4dOrBMT6C8HnejVdKuFmPeonOhv1I.5LEw-xKDEo6mNBvn 
 Passcode: Wja^qdc9
+
+day_35_mar_9:
+https://zoom.us/rec/share/hfWefO4u3z7XelD4KN76tI_gkhmgeQLfCTKRZatiQGlypRqYmnDIASoNzfb7lLI.9tvaNnVcUI0UWqBQ 
+Passcode: @ps*9%p#
