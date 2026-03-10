@@ -140,3 +140,7 @@ Passcode: Wja^qdc9
 day_35_mar_9:
 https://zoom.us/rec/share/hfWefO4u3z7XelD4KN76tI_gkhmgeQLfCTKRZatiQGlypRqYmnDIASoNzfb7lLI.9tvaNnVcUI0UWqBQ 
 Passcode: @ps*9%p#
+
+day_36_mar_10:
+https://zoom.us/rec/share/BMkHLEypakMqLHOEslt1zhh8vyY3wm6a2bJuhhMxJYypiYDUtC_MEyvs2zDzbsrs.nqHqXufdz8PAg_WM 
+Passcode: e0Y4Tb!U
