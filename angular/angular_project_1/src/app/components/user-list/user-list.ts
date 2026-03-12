@@ -1,9 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-user-list',
-  imports: [],
+  imports: [
+    RouterLink
+  ],
   templateUrl: './user-list.html',
   styleUrl: './user-list.css',
 })
