@@ -156,3 +156,7 @@ Passcode: *bD*1hGh
 day_38_mar_12:
 https://zoom.us/rec/share/hb86jx2WnOUkWjklo475j-iQtpPhz8LUa_PKGekRdDonDo6JWFZ8syACvBjF7C1b.fa_a9BM7ydpT6IJ_ 
 Passcode: $b=L#wd8
+
+day_39_mar_13:
+https://zoom.us/rec/share/UlJbF9NNB39bCKAjeYvRu0fdDFhARPJdrfm149fatzMCeovkyV75U6f_MCTHVH6T.RKW7apuoK7mFrU7O 
+Passcode: W$v%+7Rb
