@@ -13,4 +13,28 @@ export class App {
   addition(num1: number, num2: number) {
     return num1 + num2;
   }
+  sumOfDigits(num: number) {
+    let sum = 0;
+    while (num != 0) {
+      let rem = num % 10;
+      sum = sum + rem;
+      num = Math.floor(num / 10);
+    }
+    return sum;
+  }
+
+  processData(data: any) {
+    console.log('Processing data:', data);
+    return data.length;
+  }
+  fetchData() {
+    const data = ['item1', 'item2', 'item3'];
+    return this.processData(data);
+  }
+
+  async fetchuserData() {
+    let response = await fetch('https://jsonplaceholder.typicode.com/users');
+    let finalResponse = await response.json();
+    return finalResponse;
+  }
 }

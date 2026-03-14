@@ -44,4 +44,31 @@ describe('App', () => {
     expect(app.addition(-10, 20)).toBe(10);
     console.log('It-3');
   });
+
+  it('should verify sumOfDigits function', () => {
+    const fixture = TestBed.createComponent(App);
+    const app = fixture.componentInstance;
+    expect(app.sumOfDigits(125)).toBe(8);
+  });
+
+  it('should verify fetchData function', () => {
+    const fixture = TestBed.createComponent(App);
+    const app = fixture.componentInstance;
+    const processDataSpy = vi.spyOn(app, 'processData');
+    const result = app.fetchData();
+    expect(processDataSpy).toHaveBeenCalled(); // Verify processData was called
+    expect(processDataSpy).toHaveBeenCalledWith(['item1', 'item2', 'item3']); // Verify correct arguments
+    expect(result).toBe(3); // Verify the return value
+  });
+  it('should verify fetchuserData function', async () => {
+    const fixture = TestBed.createComponent(App);
+    const app = fixture.componentInstance;
+    vi.spyOn(app, 'fetchuserData').mockResolvedValue([
+      { name: 'laksheet', age: 25 },
+      { name: 'sanjay', age: 55 },
+    ]);
+
+    let userResponse = await app.fetchuserData();
+    expect(userResponse.length).toBe(2);
+  });
 });
