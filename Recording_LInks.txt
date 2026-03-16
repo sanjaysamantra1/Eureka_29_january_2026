@@ -168,3 +168,7 @@ Passcode: *&UXnVK7
 day_41_mar_15:
 https://zoom.us/rec/share/Ff58zWXZKL7VZ4WZsMrdSFW44Sm_WH7XeAfS15ReA2-WflB7Lz4zyaSDfbHztfMf.3Z66eW9Wjbeu1pDS 
 Passcode: Dv.Y6P%h
+
+day_42_mar_16:
+https://zoom.us/rec/share/hPWQlc_QYhG_YtUuAx3vgmN3inAOr1HwstI-t3dhW1PUWCqIF4LLTG0mg8p8c58Y.iEl6DZPnotLEW5lR 
+Passcode: g*M8z^c2
